@@ -1,16 +1,2 @@
-stage('Install Dependencies') {
-    steps {
-        dir('my-app') {
-            sh 'npm install'
-        }
-    }
-}
-
-stage('Run App') {
-    steps {
-        dir('my-app') {
-            sh 'node index.js'
-        }
-    }
-}
+git branch: 'main', url: 'https://github.com/1234Manjeet/my-app.git'
 
